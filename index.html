@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #app {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #todo-input {
+        width: 70%;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    #add-todo-btn, #clear-btn, #filter-all-btn, #filter-active-btn, #filter-completed-btn {
+        padding: 10px 15px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .completed {
+        text-decoration: line-through;
+        color: gray;
+    }
+</style>
+<body>
+    <h1>
+        Todo List Application
+    </h1>    
+    <div id="app">
+        <input type="text" id="nuevaTarea" placeholder="Agregar nueva tarea">
+        <button id="agregarTarea">Agregar Tarea</button>
+        <ul id="todo-list"></ul>
+        <button id="clear-btn">Clear All</button>
+        <div>  
+
+    </div>
+
+    
+</body>
+<script src="dom.js"></script>
+</html>
